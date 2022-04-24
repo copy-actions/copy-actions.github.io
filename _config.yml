@@ -1,0 +1,57 @@
+app_name: Copy Actions
+app_subtitle: A powerful clipboard / pasteboard manager
+app_download: https://apps.apple.com/cn/app/copy-actions/id1620755769
+app_github: https://github.com/copy-actions
+app_id: 1620755769
+email: kezhenxu94@gmail.com
+app_icon: /assets/icon.png
+favicon: /assets/icon.png
+
+made_by: Made by [kezhenxu94](https://github.com/kezhenxu94)
+
+links: []
+  # - title: AppStore Connect Widget
+  #   url: https://ac-widget.xyz
+
+app_description: |
+    Copy Actions is a clipboard / pasteboard manager on your mac.
+
+    ## Features
+
+      - Store all what you copied in your local machine and sync with iCloud between all your devices.
+      - Unlimited copy items, including plain text, rich text format, images, URL links, files.
+      - Set aliases for your copy history, and search to easily find what you want.
+      - Preview the text, image, URL links before you paste it into your work.
+
+    Report bugs or request features at [GitHub](https://github.com/copy-actions/copy-actions.github.io/issues/new/choose).
+
+plugins:
+  - jekyll-postcss
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - .gitignore
+  - node_modules
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "assets/screenshots"
+    values:
+      screenshot: true
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+include: ["node_modules/tailwindcss"]
